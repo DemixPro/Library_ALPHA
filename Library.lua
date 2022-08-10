@@ -1,5 +1,5 @@
 local Library = {}
-function Library:CreateWindow(TopText)
+function Library:CreateWindow(WindowTopText)
 	local Window = {}	
 	local ZerelUILibrary_random = Instance.new("ScreenGui")
 	local MainFrame = Instance.new("Frame")
@@ -38,7 +38,7 @@ function Library:CreateWindow(TopText)
 	TopText.Position = UDim2.new(0, 0, -0.00361010828, 0)
 	TopText.Size = UDim2.new(0, 425, 0, 25)
 	TopText.Font = Enum.Font.Cartoon
-	TopText.Text = "    " .. TopText
+	TopText.Text = "    " .. WindowTopText
 	TopText.TextColor3 = Color3.fromRGB(0, 0, 0)
 	TopText.TextSize = 14.000
 	TopText.TextXAlignment = Enum.TextXAlignment.Left
