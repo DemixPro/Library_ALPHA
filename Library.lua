@@ -65,7 +65,7 @@ function Library:CreateWindow(WindowTopText)
 		local Hitbox = Instance.new("TextButton")
 
 		Tab.Name = "Tab"
-		Tab.Parent = Gui.MainFrame.Tabs
+		Tab.Parent = game.Players.LocalPlayer.PlayerGui[Gui].MainFrame.Tabs
 		Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Tab.BackgroundTransparency = 1.000
 		Tab.Size = UDim2.new(0, 110, 0, 39)
