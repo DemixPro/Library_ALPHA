@@ -10,7 +10,7 @@ function Library:CreateWindow(WindowTopText)
 	local Tabs = Instance.new("Frame")
 	local UIListLayout = Instance.new("UIListLayout")
 
-	local Gui = "ZerelUILibrary_" .. game:GetService("HttpService"):GenerateGUID(false)
+	_G.GuiName = "ZerelUILibrary_" .. game:GetService("HttpService"):GenerateGUID(false)
 	
 	ZerelUILibrary_random.Name = Gui
 	ZerelUILibrary_random.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -65,7 +65,7 @@ function Library:CreateWindow(WindowTopText)
 		local Hitbox = Instance.new("TextButton")
 
 		Tab.Name = "Tab"
-		Tab.Parent = game.Players.LocalPlayer.PlayerGui[Gui].MainFrame.Tabs
+		Tab.Parent = game.Players.LocalPlayer.PlayerGui[_G.GuiName].MainFrame.Tabs
 		Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Tab.BackgroundTransparency = 1.000
 		Tab.Size = UDim2.new(0, 110, 0, 39)
